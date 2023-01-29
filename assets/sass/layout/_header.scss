@@ -19,7 +19,6 @@
     background-repeat: no-repeat;
 
     background-position: -10px 280px;
-    // background-size: 395px;
     background-size: 105.3%;
 
     z-index: -1;
@@ -27,8 +26,7 @@
     @include media-breakpoint-on($screen-size-xxl) {
       background-image: url("/assets/images/bg-curvy-desktop.svg");
 
-      background-position: -35px 851px;
-      //   background-size: 1441px;
+      background-position: 15px 851px;
       background-size: 100%;
       height: 1500px;
     }

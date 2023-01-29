@@ -402,12 +402,9 @@
     margin-bottom: rem(35px);
 
     @include media-breakpoint-on($screen-size-lg) {
+      width: unset;
       margin-left: 0;
-      margin-bottom: 0;
-    }
-
-    @include media-breakpoint-on($screen-size-xxl) {
-      margin-bottom: rem(50px);
+      margin-bottom: rem(30px);
     }
   }
 

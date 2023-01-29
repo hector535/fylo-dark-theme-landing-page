@@ -26,7 +26,7 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <a href="#">
+        <a aria-label="Logo of the company" href="#">
           <img
             class="nav__logo"
             src="/assets/images/logo.svg"
@@ -67,7 +67,7 @@
     </header>
 
     <main class="main">
-      <section class="benefits">
+      <div class="benefits">
         <article class="benefits__access">
           <img
             class="benefits__icon-access"
@@ -117,9 +117,9 @@
             shared.
           </p>
         </article>
-      </section>
+      </div>
 
-      <section class="productive">
+      <div class="productive">
         <img
           class="productive__img"
           src="/assets/images/illustration-stay-productive.png"
@@ -178,9 +178,9 @@
             </svg>
           </a>
         </div>
-      </section>
+      </div>
 
-      <section class="testimonials">
+      <div class="testimonials">
         <blockquote class="testimonial testimonials__item">
           Fylo has improved our team productivity by an order of magnitude.
           Since making the switch our team has become a well-oiled collaboration
@@ -229,7 +229,7 @@
             </div>
           </footer>
         </blockquote>
-      </section>
+      </div>
 
       <article class="promotion main__promotion">
         <h2 class="promotion__title">Get early access today</h2>
@@ -238,7 +238,7 @@
           extremely generous. If you have any questions, our support team would
           be happy to help you.
         </p>
-        <form class="promotion__form" action="">
+        <form class="promotion__form">
           <div class="promotion__input-container">
             <input
               class="promotion__input"
@@ -253,9 +253,13 @@
     </main>
 
     <footer class="footer">
-      <section class="company">
+      <div class="company">
         <div class="company__container">
-          <a class="company__logo-container" href="#">
+          <a
+            aria-label="Logo of the company"
+            class="company__logo-container"
+            href="#"
+          >
             <img class="company__logo" src="/assets/images/logo.svg" alt="" />
           </a>
           <div class="company__location">
@@ -323,7 +327,11 @@
           <div class="company__socials">
             <ul class="company__socials-list">
               <li class="company__socials-item">
-                <a class="social-link" href="https://www.facebook.com">
+                <a
+                  aria-label="Visit our facebook social page"
+                  class="social-link"
+                  href="https://www.facebook.com"
+                >
                   <svg
                     class="social-link__icon social-link__icon--facebook"
                     xmlns="http://www.w3.org/2000/svg"
@@ -336,7 +344,11 @@
                 </a>
               </li>
               <li class="company__socials-item">
-                <a class="social-link" href="https://www.twitter.com">
+                <a
+                  aria-label="Visit our twitter social page"
+                  class="social-link"
+                  href="https://www.twitter.com"
+                >
                   <svg
                     class="social-link__icon social-link__icon--twitter"
                     xmlns="http://www.w3.org/2000/svg"
@@ -349,7 +361,11 @@
                 </a>
               </li>
               <li class="company__socials-item">
-                <a class="social-link" href="https://www.instagram.com">
+                <a
+                  aria-label="Visit our instagram social page"
+                  class="social-link"
+                  href="https://www.instagram.com"
+                >
                   <svg
                     class="social-link__icon social-link__icon--instagram"
                     xmlns="http://www.w3.org/2000/svg"
@@ -364,7 +380,7 @@
             </ul>
           </div>
         </div>
-      </section>
+      </div>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

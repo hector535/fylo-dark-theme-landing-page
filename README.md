@@ -41,7 +41,7 @@ This is a solution to the [Fylo dark theme landing page](https://www.frontendmen
 
 <h2 align="center">Links</h2>
 
-- Solution URL: [Fylo dark theme landing page (HTML + JS + SASS) | Frontend Mentor](https://www.frontendmentor.io/solutions/password-generator-app-u1W_P1C2Re)
+- Solution URL: [Fylo dark theme landing page (HTML + JS + SASS) | Frontend Mentor](https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page-html-js-sass-4YQ4iJ4FG8)
 - Live Site URL: [https://fylo-dark-theme-landing-page-d3d07.netlify.app/](https://fylo-dark-theme-landing-page-d3d07.netlify.app/)
 
 <br>

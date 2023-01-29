@@ -15,8 +15,8 @@ body {
   @include media-breakpoint-on($screen-size-xxl) {
     background: linear-gradient(
       to bottom,
-      hsl(217, 28%, 15%) 36%,
-      hsl(218, 28%, 13%) 36%
+      hsl(217, 28%, 15%) 35%,
+      hsl(218, 28%, 13%) 35%
     );
   }
 

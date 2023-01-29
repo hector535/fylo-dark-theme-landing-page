@@ -31,7 +31,6 @@
     }
 
     @include media-breakpoint-on($screen-size-xxl) {
-      //   margin-top: rem(36px);
       width: rem(734px);
       @include font-swl(rem(40px), $fw-bold, rem(60px));
     }
