@@ -324,9 +324,15 @@ body {
   padding: 1.5rem 1.25rem;
   background-color: hsl(219deg, 30%, 18%);
   border-radius: 4px;
+  box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.0458843);
   font-size: 0.625rem;
   font-weight: 400;
   line-height: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  .testimonial {
+    box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.0991282);
+  }
 }
 @media screen and (min-width: 1440px) {
   .testimonial {

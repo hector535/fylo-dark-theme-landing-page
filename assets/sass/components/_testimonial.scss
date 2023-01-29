@@ -7,7 +7,13 @@
   background-color: $clr-dark-blue-1;
   border-radius: 4px;
 
+  box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.0458843);
+
   @include font-swl(rem(10px), $fw-regular, rem(18px));
+
+  @include media-breakpoint-on($screen-size-md) {
+    box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.0991282);
+  }
 
   @include media-breakpoint-on($screen-size-xxl) {
     padding: rem(40px) rem(24.7px) rem(26px) rem(26px);
