@@ -1,0 +1,18 @@
+@use "./base/reset";
+@use "./base/base";
+
+@use "./layout/header";
+@use "./layout/navigation";
+@use "./layout/footer";
+
+@use "./components/social-link";
+@use "./components/button";
+@use "./components/icon-link";
+@use "./components/hero";
+@use "./components/testimonial";
+@use "./components/promotion";
+
+@use "./pages/home";
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");

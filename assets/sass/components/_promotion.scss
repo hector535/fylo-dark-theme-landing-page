@@ -1,0 +1,91 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+
+.promotion {
+  background-color: $clr-dark-blue-2;
+  padding: rem(38px) rem(28px);
+  border-radius: 9px;
+  text-align: center;
+
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
+
+  @include media-breakpoint-on($screen-size-xxl) {
+    padding: rem(42px) rem(77px) rem(41px);
+  }
+
+  &__title {
+    @include font-swl(rem(18px), $fw-bold, rem(24px));
+    font-family: $ff-raleway;
+    margin-bottom: rem(16px);
+
+    @include media-breakpoint-on($screen-size-lg) {
+      font-size: rem(26px);
+      line-height: rem(40px);
+    }
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      font-size: rem(32px);
+      line-height: rem(48px);
+    }
+  }
+
+  &__description {
+    margin-bottom: rem(32px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      margin-bottom: rem(38px);
+      margin-inline: auto;
+      width: rem(673px);
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: rem(24px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      flex-direction: row;
+      justify-content: center;
+      gap: rem(29px);
+    }
+  }
+
+  &__input {
+    border: 0;
+    border-radius: 24px;
+    padding: rem(16px) rem(30px);
+    outline: 0;
+    width: 100%;
+    font-size: rem(12px);
+    line-height: rem(16px);
+    color: $clr-purple;
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      width: rem(480px);
+    }
+  }
+
+  &__input::placeholder {
+    font-size: rem(10px);
+    line-height: rem(14px);
+    color: $clr-grey;
+  }
+
+  &__error {
+    display: none;
+    text-align: left;
+    margin-top: rem(4px);
+    margin-left: rem(28px);
+    @include font-swl(rem(10px), $fw-bold, rem(14px));
+    color: $clr-light-red;
+  }
+
+  &__button {
+    align-self: flex-start;
+    @include media-breakpoint-on($screen-size-xxl) {
+      width: rem(200px);
+    }
+  }
+}

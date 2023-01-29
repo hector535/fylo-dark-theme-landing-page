@@ -1,0 +1,24 @@
+@mixin flex($justify: center, $align: center, $direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin font-swl($font-size, $font-weight, $line-height) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin media-breakpoint-on($size, $condition: min-width) {
+  @media screen and ($condition: $size) {
+    @content;
+  }
+}
+
+@mixin container {
+  width: 89.3%;
+  max-width: 80rem;
+  margin-inline: auto;
+}

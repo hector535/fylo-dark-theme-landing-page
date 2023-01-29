@@ -1,0 +1,535 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+
+.main {
+  margin-top: rem(131.22px);
+  @include container;
+  position: relative;
+  padding-bottom: rem(337px);
+
+  @include media-breakpoint-on($screen-size-md) {
+    margin-top: rem(150px);
+    padding-bottom: rem(350px);
+  }
+
+  @include media-breakpoint-on($screen-size-xxl) {
+    margin-top: rem(168.96px);
+    padding-bottom: rem(360px);
+  }
+
+  &__promotion {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(48%);
+    max-width: rem(863px);
+
+    @include media-breakpoint-on($screen-size-md) {
+      width: 70%;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      transform: translateY(42.5%);
+    }
+  }
+}
+
+.header__hero {
+  margin-top: rem(48px);
+
+  @include media-breakpoint-on($screen-size-md) {
+    margin-top: rem(60px);
+  }
+
+  @include media-breakpoint-on($screen-size-xxl) {
+    margin-top: rem(75px);
+  }
+}
+
+.benefits {
+  display: grid;
+  gap: rem(87px);
+  text-align: center;
+
+  @include media-breakpoint-on($screen-size-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-breakpoint-on($screen-size-xxl) {
+    grid-template-columns: unset;
+    margin-inline: auto;
+    display: block;
+    text-align: unset;
+    width: rem(880px);
+  }
+
+  &__access,
+  &__security,
+  &__collaboration,
+  &__any {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      display: inline-grid;
+    }
+  }
+
+  &__access-title,
+  &__security-title,
+  &__collaboration-title,
+  &__any-title {
+    font-family: $ff-raleway;
+    @include font-swl(rem(18px), $fw-bold, rem(24px));
+  }
+
+  @include media-breakpoint-on($screen-size-md) {
+    &__access-title,
+    &__security-title,
+    &__collaboration-title,
+    &__any-title {
+      font-size: rem(20px);
+      line-height: rem(23px);
+    }
+  }
+
+  @include media-breakpoint-on($screen-size-xxl) {
+    &__access {
+      width: rem(349px);
+      margin-right: rem(120px);
+    }
+
+    &__security {
+      margin-left: rem(23px);
+      width: rem(384px);
+    }
+
+    &__collaboration,
+    &__any {
+      width: rem(363px);
+    }
+
+    &__collaboration {
+      margin-top: rem(97.2px);
+      margin-right: rem(150px);
+    }
+  }
+
+  &__access-title {
+    margin-top: rem(33.61px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      margin-top: rem(27.42px);
+    }
+  }
+
+  &__security-title {
+    margin-top: rem(29px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      margin-top: rem(27.5px);
+    }
+  }
+
+  &__collaboration-title {
+    margin-top: rem(37.33px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      margin-top: rem(32.8px);
+    }
+  }
+
+  &__any-title {
+    margin-top: rem(40.15px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      margin-top: rem(34px);
+    }
+  }
+
+  &__description {
+    margin-top: rem(8px);
+    width: 97%;
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      width: 100%;
+    }
+  }
+
+  &__icon-access {
+    width: rem(63.49px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      width: rem(84px);
+    }
+  }
+
+  &__icon-security {
+    width: rem(54px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      width: rem(65.6px);
+    }
+  }
+
+  &__icon-collaboration {
+    width: rem(66px);
+    margin-top: rem(5px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      width: rem(84px);
+      margin-top: 0;
+    }
+  }
+
+  &__icon-any {
+    width: rem(69.77px);
+    margin-top: rem(6.5px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      width: rem(90px);
+      margin-top: 0;
+    }
+  }
+}
+
+.productive {
+  margin-top: rem(160px);
+  display: grid;
+  justify-items: center;
+
+  @include media-breakpoint-on($screen-size-md) {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  @include media-breakpoint-on($screen-size-xxl) {
+    margin-top: rem(135px);
+    margin-left: rem(25px);
+
+    justify-items: unset;
+
+    display: flex;
+    gap: rem(57.24px);
+    align-items: center;
+  }
+
+  &__img {
+    width: 90.8%;
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      width: rem(614.76px);
+    }
+  }
+
+  &__content {
+    margin-top: rem(48px);
+    display: grid;
+    justify-items: center;
+    gap: rem(16px);
+
+    @include media-breakpoint-on($screen-size-md) {
+      margin-top: 0;
+      justify-items: unset;
+      gap: 0;
+    }
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      margin-top: rem(48px);
+      display: block;
+    }
+  }
+
+  &__title {
+    margin-right: rem(15px);
+    font-family: $ff-raleway;
+    @include font-swl(rem(18px), $fw-bold, rem(24px));
+
+    @include media-breakpoint-on($screen-size-md) {
+      //   width: rem(00px);
+      font-size: rem(30px);
+      line-height: rem(40px);
+    }
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      width: rem(400px);
+      font-size: rem(40px);
+      line-height: rem(50px);
+    }
+  }
+
+  &__description {
+    margin-left: rem(7.5px);
+
+    @include media-breakpoint-on($screen-size-md) {
+      margin-left: 0;
+      margin-top: rem(19px);
+      //   font-size: rem(16px);
+      //   line-height: rem(24px);
+    }
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      // margin-left: 0;
+      // margin-top: rem(19px);
+      font-size: rem(16px);
+      line-height: rem(24px);
+      width: 96%;
+    }
+  }
+
+  @include media-breakpoint-on($screen-size-md) {
+    &__description:nth-of-type(2) {
+      margin-top: rem(16px);
+    }
+  }
+
+  &__cta {
+    justify-self: left;
+    margin-left: rem(7.5px);
+
+    @include media-breakpoint-on($screen-size-md) {
+      margin-top: rem(24px);
+      margin-left: 0;
+      font-size: rem(14px);
+      line-height: rem(18px);
+    }
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      //   margin-top: rem(24px);
+      //   margin-left: 0;
+      font-size: rem(16px);
+      line-height: rem(22px);
+    }
+  }
+
+  &__cta:hover .circle {
+    fill: $clr-white;
+  }
+}
+
+.testimonials {
+  margin-top: rem(168px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(24px);
+
+  @include media-breakpoint-on($screen-size-lg) {
+    margin-top: rem(177px);
+    flex-direction: row;
+    gap: rem(40px);
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  //   @include media-breakpoint-on($screen-size-xxl) {
+  //     margin-top: rem(177px);
+  //     flex-direction: row;
+  //     gap: rem(40px);
+  //     align-items: flex-start;
+  //     justify-content: center;
+  //   }
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    top: -15px;
+    left: 33px;
+    background-image: url("/assets/images/bg-quotes.png");
+    background-repeat: no-repeat;
+    background-size: 22px 15px;
+    z-index: -1;
+  }
+
+  @include media-breakpoint-on($screen-size-xxl) {
+    &::before {
+      top: -40px;
+      left: 50px;
+      background-size: 58px 50px;
+    }
+  }
+
+  &__item {
+    width: 83.5%;
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      width: 360px;
+    }
+  }
+}
+
+.company {
+  @include container;
+  margin-bottom: rem(16px);
+
+  &__container {
+    margin-left: rem(8px);
+
+    @include media-breakpoint-on($screen-size-lg) {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 0.5fr;
+      gap: rem(30px);
+    }
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      display: unset;
+      grid-template-columns: unset;
+      gap: unset;
+      margin-left: rem(40px);
+    }
+  }
+
+  &__logo-container {
+    @include media-breakpoint-on($screen-size-lg) {
+      grid-column: 1 / -1;
+    }
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      grid-column: unset;
+    }
+  }
+
+  &__logo {
+    width: rem(108px);
+    margin-left: rem(11px);
+    margin-bottom: rem(35px);
+
+    @include media-breakpoint-on($screen-size-lg) {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      margin-bottom: rem(50px);
+    }
+  }
+
+  &__location {
+    display: flex;
+    gap: rem(26px);
+    align-items: flex-start;
+    margin-bottom: rem(16px);
+
+    @include font-swl(rem(16px), $fw-regular, rem(24px));
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      display: inline-flex;
+      width: rem(379px);
+      margin-right: rem(80px);
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon-location {
+    margin-top: rem(7px);
+  }
+
+  &__contacts {
+    margin-bottom: rem(59px);
+
+    @include media-breakpoint-on($screen-size-lg) {
+      margin-bottom: 0;
+    }
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      display: inline-grid;
+      width: rem(171px);
+      margin-right: rem(138.2px);
+    }
+  }
+
+  &__phone {
+    display: flex;
+    gap: rem(21px);
+    align-items: center;
+    margin-bottom: rem(18px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      position: relative;
+      top: -4px;
+      gap: rem(28px);
+      margin-bottom: rem(14px);
+    }
+  }
+
+  &__icon-phone {
+    width: 16px;
+  }
+
+  &__email {
+    display: flex;
+    gap: rem(18px);
+    align-items: center;
+    @include media-breakpoint-on($screen-size-xxl) {
+      margin-left: rem(-3px);
+      gap: rem(23px);
+    }
+  }
+
+  &__icon-email {
+    margin-left: rem(2px);
+    margin-top: rem(3px);
+  }
+
+  &__about {
+    display: grid;
+    gap: rem(48px);
+    @include font-swl(rem(16px), $fw-regular, rem(22px));
+    margin-bottom: rem(56px);
+
+    @include media-breakpoint-on($screen-size-lg) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(30px);
+      margin-bottom: 0;
+    }
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      display: inline-grid;
+      position: relative;
+      top: -6px;
+      width: rem(254px);
+      margin-right: rem(85px);
+      gap: rem(80px);
+    }
+  }
+
+  &__about-list {
+    display: grid;
+    gap: rem(16px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      align-content: flex-start;
+    }
+  }
+
+  @include media-breakpoint-on($screen-size-xxl) {
+    &__about-list:nth-of-type(2) {
+      margin-left: -18px;
+    }
+  }
+
+  &__about-link:hover {
+    font-weight: $fw-bold;
+  }
+
+  &__socials-list {
+    display: flex;
+    gap: rem(10.82px);
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      display: inline-flex;
+    }
+  }
+}

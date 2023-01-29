@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+
+.footer {
+  background-color: $clr-dark-blue-4;
+  padding-top: rem(250px);
+  padding-bottom: rem(52px);
+
+  @include media-breakpoint-on($screen-size-lg) {
+    padding-top: rem(148px);
+    padding-left: rem(45px);
+    padding-bottom: rem(53px);
+  }
+}

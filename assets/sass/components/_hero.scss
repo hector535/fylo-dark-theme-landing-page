@@ -1,0 +1,71 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+
+.hero {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+
+  &__img {
+    width: 90.8%;
+    @include media-breakpoint-on($screen-size-lg) {
+      width: 65%;
+    }
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      width: rem(720px);
+    }
+  }
+
+  &__title {
+    margin-top: rem(33px);
+    font-family: $ff-raleway;
+
+    @include font-swl(rem(24px), $fw-bold, rem(36px));
+
+    @include media-breakpoint-on($screen-size-lg) {
+      margin-top: rem(36px);
+      width: rem(600px);
+      @include font-swl(rem(30px), $fw-bold, rem(50px));
+    }
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      //   margin-top: rem(36px);
+      width: rem(734px);
+      @include font-swl(rem(40px), $fw-bold, rem(60px));
+    }
+  }
+
+  &__description {
+    margin-top: rem(15px);
+    width: 90%;
+
+    @include media-breakpoint-on($screen-size-lg) {
+      margin-top: rem(25px);
+      width: 70%;
+      font-size: rem(16px);
+      line-height: rem(26px);
+    }
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      margin-top: rem(32px);
+      width: rem(589px);
+      font-size: rem(20px);
+      line-height: rem(30px);
+    }
+  }
+
+  &__cta {
+    margin-top: rem(32px);
+    width: rem(240px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      width: rem(280px);
+      font-size: rem(16px);
+      line-height: rem(19px);
+      padding-block: rem(18px);
+      border-radius: 28px;
+    }
+  }
+}

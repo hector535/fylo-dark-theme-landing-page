@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+
+.nav {
+  @include flex(space-between, center);
+  font-family: $ff-raleway;
+  font-size: rem(12px);
+  line-height: rem(14px);
+
+  @include media-breakpoint-on($screen-size-xxl) {
+    font-size: rem(16px);
+    line-height: rem(19px);
+  }
+
+  &__logo {
+    width: rem(80px);
+    height: rem(24px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      width: rem(176px);
+      height: rem(52px);
+    }
+  }
+
+  &__list {
+    @include flex(space-between, center);
+    gap: rem(24px);
+    margin-right: rem(8px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      gap: rem(58px);
+      margin-right: 0;
+    }
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
+}

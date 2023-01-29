@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+
+body {
+  color: $clr-white;
+  font-family: $ff-open-sans;
+
+  background: linear-gradient(
+    to bottom,
+    hsl(217, 28%, 15%) 9.49%,
+    hsl(218, 28%, 13%) 9.49%
+  );
+
+  @include media-breakpoint-on($screen-size-xxl) {
+    background: linear-gradient(
+      to bottom,
+      hsl(217, 28%, 15%) 36%,
+      hsl(218, 28%, 13%) 36%
+    );
+  }
+
+  @include font-swl(rem(14px), $fw-regular, rem(21px));
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $clr-grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $clr-dark-blue-4;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $clr-dark-blue-1;
+}

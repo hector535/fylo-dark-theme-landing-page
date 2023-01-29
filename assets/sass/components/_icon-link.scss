@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+
+.icon-link {
+  display: inline-flex;
+  gap: rem(7px);
+  align-items: center;
+  color: $clr-cyan;
+  font-size: rem(12px);
+  line-height: rem(16px);
+  padding-bottom: rem(6px);
+  border-bottom: 1px solid $clr-cyan;
+
+  &:hover {
+    color: $clr-white;
+    border-color: $clr-white;
+  }
+}

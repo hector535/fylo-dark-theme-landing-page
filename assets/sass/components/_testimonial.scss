@@ -1,0 +1,47 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+
+.testimonial {
+  padding: rem(24px) rem(20px);
+  background-color: $clr-dark-blue-1;
+  border-radius: 4px;
+
+  @include font-swl(rem(10px), $fw-regular, rem(18px));
+
+  @include media-breakpoint-on($screen-size-xxl) {
+    padding: rem(40px) rem(24.7px) rem(26px) rem(26px);
+    @include font-swl(rem(14px), $fw-regular, rem(21px));
+    letter-spacing: 0.5px;
+  }
+
+  &__footer {
+    margin-top: rem(17px);
+    display: flex;
+    gap: rem(8px);
+
+    @include media-breakpoint-on($screen-size-xxl) {
+      margin-top: rem(24px);
+    }
+  }
+
+  &__avatar {
+    width: 24px;
+    border-radius: 100vmax;
+    align-self: flex-start;
+  }
+
+  &__author,
+  &__company {
+    letter-spacing: 0.5px;
+  }
+
+  &__author {
+    @include font-swl(rem(10px), $fw-bold, rem(12px));
+    margin-bottom: rem(4px);
+  }
+
+  &__company {
+    @include font-swl(rem(8px), $fw-regular, rem(10px));
+  }
+}

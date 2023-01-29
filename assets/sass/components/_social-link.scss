@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+
+.social-link {
+  width: 28px;
+  height: 28px;
+  border: 1px solid $clr-silver;
+  border-radius: 100vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @include media-breakpoint-on($screen-size-xxl) {
+    width: 31px;
+    height: 31px;
+  }
+
+  &__icon * {
+    fill: $clr-white;
+  }
+
+  &:hover {
+    border: 1px solid $clr-cyan;
+  }
+
+  &:hover * {
+    fill: $clr-cyan;
+  }
+
+  &__icon--facebook {
+    width: 7.03px;
+  }
+
+  &__icon--twitter {
+    width: 12px;
+  }
+
+  &__icon--instagram {
+    width: 14.69px;
+  }
+}
